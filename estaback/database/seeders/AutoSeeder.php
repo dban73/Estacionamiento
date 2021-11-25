@@ -13,6 +13,10 @@ class AutoSeeder extends Seeder
      */
     public function run()
     {
-        //
-    }
+        DB:table("autos")->insert([
+            ["placa"=>"ABC-1020","marca"=>"NISSAN","cliente_id"=>1],
+            ["placa"=>"ABC-1030","marca"=>"TOYOTA","cliente_id"=>2],
+            ["placa"=>"ABC-1040","marca"=>"SUSUKI","cliente_id"=>3],
+        ]);
+    }   
 }

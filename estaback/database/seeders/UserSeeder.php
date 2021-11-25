@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class LogSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,8 +13,8 @@ class LogSeeder extends Seeder
      */
     public function run()
     {
-        DB:table("clientes")->insert([
-            ["fecha"=>"2021-01-01","hora"=>"10:05","monto"=>10,"auto_id"=>1,"user_id"=>1],     
+        DB:table("autos")->insert([
+            ["name"=>"admin","email"=>"admin@test","password"=>Hash::make(value: 123456)],
         ]);
     }
 }
