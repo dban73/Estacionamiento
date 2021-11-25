@@ -13,6 +13,10 @@ class ClienteSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB:table("clientes")->insert([
+            ["ci"=>"1020","nombre"=>"Juan lopez"],
+            ["ci"=>"1030","nombre"=>"Maria Juarez"],
+            ["ci"=>"1040","nombre"=>"Rene vargas"],
+        ]);
     }
 }
